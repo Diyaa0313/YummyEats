@@ -1,42 +1,49 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;/copy/
+    margin: 0;
+}
+
 .hero-bg {
-    background: #307D99 url(orange.jpg);
-    background-position: 22% 83%;
-    color: white;
+    background: #307D99 url('orange.jpg');
+    background-position: 22% 83% ;
+    color: white; /* colour of texts */    
     text-align: center;
-    padding-bottom: 4em;
+    padding-bottom:4em;/absolute unit=px    relative unit=em/
 }
 
-div {
-    display: block;
+header{
+     /* top right bottom left...just like a clock*/
+     padding: 1em 0;/* (top and bottom) (right and left)*/
+
 }
 
-.hero-bg a {
+.hero-bg a { /* to change all the "a" tags presnt in hero-bg*/
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2em; /rem=unit of font size/
+}
+
+section {
+    margin: 0 1em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em 0;
 }
 
 h1 span {
     text-transform: uppercase;
-    display: block;
+    display: block; /* gives the string a separate line*/
     font-size: 1.4rem;
 }
 
-.hero-bg p {
+.hero-bg p{
     font-weight: bold;
-    margin: 0 1em 3em;
-}
-p {
-    line-height: 2em;
-}
+    margin : 0 1em 3em;/top right bottom/
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .form-container {
@@ -45,167 +52,216 @@ p {
     padding: 2em;
 }
 
-form {
-    display: block;
-    margin-top: 0em;
-}
-
 label {
-    color: #d44c08;
+    color: #2d7d98;
     font-weight: bold;
     display: block;
     margin: 0 0 1em;
     font-size: 1.2rem;
 }
 
-label {
-    cursor: default;
-}
-
 input[type=text] {
     border: 1px solid #46030d;
     width: 100%;
-    box-sizing: border-box;
-    padding: 1em;
-    border-radius: 0.6em;
-    margin-top: 1.2em;
-}
-user agent stylesheet
-input[type="text" i] {
-    writing-mode: horizontal-tb !important;
-    padding-block: 1px;
-    padding-inline: 2px;
-}
-user agent stylesheet
-input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
-}
-user agent stylesheet
-input {
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-variant-alternates: ;
-    font-variant-position: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: ;
-    font-optical-sizing: ;
-    font-kerning: ;
-    font-feature-settings: ;
-    font-variation-settings: ;
-    text-rendering: auto;
-    color: fieldtext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    background-color: field;
-    margin: 0em;
-    padding: 1px 0px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-    padding-block: 1px;
-    padding-inline: 2px;
+    box-sizing:border-box;/whats this?/
+    padding:1em;
+    border-radius: .6em;
+    margin-top:1.2em;
 }
 
 .form-container p {
-    color: grey;
-    margin-top: 0.3em;
+    color:grey;
+    margin-top: .3em;
     margin-bottom: 1.5em;
-    font-weight: normal;
+    font-weight:normal;
     font-size: .9rem;
 }
 
 input[type=button] {
-    background-color: #F89104;
-    border: none;
-    color: white;
+    background-color: #F89104 ;
+    border :none;
+    color:white;
     font-weight: bold;
     width: 100%;
-    padding: 1em 0;
-    border-radius: 0.6em;
-    margin-top: 1.2em;
-    font-size: 1.3em;
-    cursor: pointer;
-    box-sizing: border-box;
+    padding:1em 0;
+    border-radius: .6em;
+    margin-top:1.2em;
+    font-size:1.3em;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+
+input[type=button]:hover{
+    background-color: #e38707;
+}
+
+.authentic {
+    margin : 0;
 }
 
 .right-column {
     text-align: center;
-    margin: 3em 1em;
+    margin: 3em 1em ;
+
 }
 
-h2 {
+h2{
     text-transform: uppercase;
-}
-user agent stylesheet
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+
 }
 
-p {
+img {
+    width:100%;
+}
+
+p{
     line-height: 2em;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
 
-.container2 {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    width: 80%;
-    margin: auto;
-    margin-top: 125px;
-}
-
-.sidebar {
-    overflow: hidden;
-    margin:auto;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: 50%;
-    position: relative;
-    z-index: 1;
+.overlay {
+    position: absolute;
+    height:100vh;
+    width: 100% ;
+    background: rgba(0,0,0,.9);
+    z-index:1; /* to keep the overlay infront of the animation*/
+    place-content: center;
+    color:white;
+    display:none; 
+    opacity: 0;
 
 }
 
-.slider {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+.animate-overlay {
+    animation: overlay 3s forwards;
 }
 
-.slider img {
-    width: 100%;
-    height: 600px;
-    flex: 1;
-    padding: 2px;
-    z-index: 1;
-    position: relative;
+
+@media (min-width: 730px){
+    
+    section {
+        margin: 0 4em;
+    }
+    .form-container{
+        margin: 2em 0em 0; 
+    }
+
+}
+
+@media (min-width: 930px){
+    
+    .hero-bg {
+            
+        text-align: left;        
+    }
+    .hero-bg a{
+        margin: 0 0 0 4em;
+    }
+
+    h1 {
+        margin: 2em 0 1.2em 2em;
+    }
+
+    .hero-bg p{
+       
+        margin : 0 5em 3em;
+    
+    }
+
+    .form-container {
+        margin: 4em 10em 0 5em;
+        border-radius: 1em;
+        box-shadow: 10px 10px 5px rgba(0,0,0,.3);/x y blur colour(,,_, opacity)/
+        
+    }
+
+    .form-container p {
+        margin-top: .3em;
+        margin-left : 0;
+        margin-bottom: 1.5em;
+        font-weight:normal;
+        font-size: .9rem;
+    }
+
+    form {
+        display: flex; /* can be done by flex & grid */
+    }
+
+    .form-left {
+        width:70%;
+    }
+
+    label {
+        margin: 0;
+    }
+
+    input[type="button"] {
+        height: fit-content;
+        font-size:1.1em ;
+        margin-left: 1em;
+        margin-top: 2.2em;
+        padding: .76em 0;
+        width:30%;
+    }
+
+    .hero-bg p {
+        margin-bottom: 0;
+    }
+
+    section.authentic {
+        display:grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-areas: "food content";/naming/
+
+    }
+
+    /* to swap*/
+    .right-column {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+    }
+     
+    img {
+        grid-area: food ;
+    }
+    /adjusting margin/
+    h2 {
+        text-align: center;
+        margin: 0 1em;
+    }
+
+}
+
+/ANIMATING/
+
+.top {
+    animation: fadeIn 3s forwards ;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8);
+    }   
+    to {
+        opacity: 1;
+        transform: translateY(+8);
+
+    } 
+}
+
+@keyframes overlay {
+
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity:1;
+    }
+    70% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
 }
