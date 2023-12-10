@@ -2,56 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<title>Document</title>
-<link rel="stylesheet" href="style.css">
-
 <body>
-    <div class="hero-bg">
-      <section class="top">
-         <header>
-            <a href="#">Yummy Eats</a>
-            <h1>
-                <span>The Healthy</span>
-                "Eating Experience"
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam illo ipsam totam recusandae, deleniti a voluptas magni quas reiciendis beatae!
-            </p>
-            <div class="form-container">
-                <form action>
-                    <div class="form-left">
-                    <label for="city1">Enter your city:</label>
-                    <input type="text" name="city" id="city1">
-                    <p>Example : Kolkata </p>
-                    </div>  
-                    <input type="button" value="Find Food Now" id="action-btn">
-                </form>
-            </div>
-         </header>
-      </section>
+
+    <div class="overlay" id="overlay">
+        <h3>Searching...</h3>
+
     </div>
+
+    <div class="hero-bg">
+        <secion class="top">
+                <header>
+                    <a href="#">Yummy.eats</a>
+
+                    <!-- <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>    
+                                                        
+                        </ul>
+                    </nav> -->
+
+
+                    <h1><span>The Healthy</span> Eating Experience</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam illo ipsam totam recusandae, deleniti a voluptas magni quas reiciendis beatae!</p>
+
+                    <div class="form-container">
+                        <form action="">
+
+                            <div class="form-left">
+                                    <label for="city1">Enter your city:</label>
+                                    <input type="text" name="city" id="city1">
+                                    <p>Example: "Kolkata"</p>
+
+                            </div>                            
+
+                            <input type="button" value="Find food Now" id="action-btn">
+
+                        </form>
+                    </div>
+                </header>
+       
+
+        </section>
+    </div>
+
     <section class="authentic">
         <div class="right-column">
-            <h2>Authentic Awsome</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quisquam quia aspernatur eum voluptates? Consectetur illo aspernatur, tempora voluptatibus ut reprehenderit veniam dolorem saepe nisi temporibus provident? Sapiente nemo dolorum nisi optio natus molestias soluta hic aspernatur reprehenderit non tempora, maxime sunt ut, sit saepe ipsa. Dolor eum voluptatem laboriosam.
-            </p>
+            <h2>Authentic.Awsome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quisquam quia aspernatur eum voluptates? Consectetur illo aspernatur, tempora voluptatibus ut reprehenderit veniam dolorem saepe nisi temporibus provident? Sapiente nemo dolorum nisi optio natus molestias soluta hic aspernatur reprehenderit non tempora, maxime sunt ut, sit saepe ipsa. Dolor eum voluptatem laboriosam.</p>
         </div>
-        
+        <img src="sizzler.jpg" alt="picture of food">
     </section>
-    <div class="container2">
-        <div class = "sidebar">
-    <div class="slider">
-        <img src="" alt="Image 1">
-        <img src="pizza.jpg" alt="Image2">
-        <img src="sandwich.jpg" alt="Image3">
-        <img src="sizzler.jpg" alt="Image5">
-    </div>
-    </div>
-    </div>
-    <script src="slider.js"></script>
+
+
+    <script>
+
+
+        let btn= document.getElementById('action-btn');
+        let overlay= document.getElementById('overlay');
+        btn.addEventListener('click' , ()=>{
+
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        });
+
+    </script>
+
 </body>
 </html>
